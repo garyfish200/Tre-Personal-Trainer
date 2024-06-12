@@ -100,7 +100,7 @@ def main():
             with client.beta.threads.runs.stream(
                 thread_id=thread_id,
                 assistant_id=assis_id,
-                # instructions="Please treat the user as a new client and create a personalized workout plan for them based on your vector store.",
+                instructions="Please treat each new message as a new user and client each time.",
                 event_handler=EventHandler(),
             ) as stream:
                 stream.until_done()
