@@ -91,9 +91,7 @@ def main():
         submit_button = st.form_submit_button(label="Run Assistant")
 
         if submit_button:
-            thread_id = client.beta.threads.create(
-                assis_id=assis_id,
-            ).id
+            thread_id = client.beta.threads.create().id
 
             client.beta.threads.messages.create(
                 thread_id=thread_id,
