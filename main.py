@@ -43,7 +43,7 @@ vector_store_id = 'vs_COKJv1Gv1SP6INxYNETFZUnx'
 #   ]
 # )
  
-thread_id = 'thread_PVGCzNwzhF3Id9ENipE8Q6xk'
+# thread_id = 'thread_PVGCzNwzhF3Id9ENipE8Q6xk'
 
 # message = "Can you give me a legs oriented workout plan? I want to focus on my lower body."
 # message = client.beta.threads.messages.create(
