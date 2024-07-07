@@ -104,6 +104,7 @@ def main():
                 assistant_id=assis_id,
                 # instructions="Please treat each new message as a new user and client each time.",
                 event_handler=EventHandler(),
+                tool_choice={"type": "file_search"}
             ) as stream:
                 stream.until_done()
 
